@@ -1,7 +1,7 @@
 require 'spec_helper'
-describe 'addu_test' do
+describe 'virtu' do
 
   context 'with defaults for all parameters' do
-    it { should contain_class('addu_test') }
+    it { should contain_class('virtu') }
   end
 end
