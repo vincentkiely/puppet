@@ -9,4 +9,3 @@ fi
 # export SYSTEMD_PAGER=
 
 # User specific aliases and functions
-echo "This is the test User"

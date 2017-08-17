@@ -25,7 +25,7 @@ define virtu::virtual ($uid,$realname,$pass,$userfiles = false) {
 
 
   group { $title:
-    ensure => 'present'
+    ensure => 'present',
     gid    => $uid,
   }
 
