@@ -42,11 +42,12 @@ define virtu::virtual ($uid,$realname,$pass,$userfiles = false) {
   } else {
     # copy in all the files in the subdirectory
     file { "/home/${title}":
+    ensure  => 'directory'
     recurse => true,
     mode    => '0755',
     owner   => $title,
     group   => $title,
-    source  => "puppet:///modules/users/${title}",
+    source  => "puppet:///modules/virtu/users/${title}",
     require => User["${title}"],
     }
   }
