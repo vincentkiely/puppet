@@ -1,2 +1,2 @@
 # puppet
-Vincent Kiely's Repo of built puppet modules
+Vincent Kiely's repo of built puppet modules
