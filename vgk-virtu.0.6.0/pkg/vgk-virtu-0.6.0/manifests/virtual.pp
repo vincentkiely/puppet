@@ -1,10 +1,10 @@
 define virtu::virtual ($uid,$realname,$pass,$userfiles = false) {
 
-  exec {'check_passwd_set':
+  exec { "change_initial_password":
     path    => '/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin',
-    onlyif  => "grep ${uid} /etc/shadow | grep -q \':!!:\'",
+    onlyif  => "grep ${title} /etc/shadow | grep -Eq \':[*!]!?:\'",
     command => "usermod -p \'${pass}\' ${title}",
-    require => User['test'],
+    require => User["${title}"],
   }
 
 
@@ -20,7 +20,7 @@ define virtu::virtual ($uid,$realname,$pass,$userfiles = false) {
     home             => "/home/${title}",
     comment          => $realname,
     managehome       => true,
-    require          => Group[$title],
+    require          => Group["${title}"],
   }
 
 
@@ -42,7 +42,7 @@ define virtu::virtual ($uid,$realname,$pass,$userfiles = false) {
   } else {
     # copy in all the files in the subdirectory
     file { "/home/${title}":
-    ensure  => 'directory'
+    ensure  => 'directory',
     recurse => true,
     mode    => '0755',
     owner   => $title,
