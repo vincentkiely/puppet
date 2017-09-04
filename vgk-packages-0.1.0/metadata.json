@@ -1,0 +1,15 @@
+{
+  "name": "vgk-packages",
+  "version": "0.1.0",
+  "author": "vgk",
+  "summary": "Adds a list of package passed in through an array",
+  "license": "Apache 2.0",
+  "source": "https://github.com/vincentkiely/puppet",
+  "project_page": "https://github.com/vincentkiely/puppet",
+  "issues_url": "https://github.com/vincentkiely/puppet/issues",
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+  ],
+  "description": "Adds a list of package passed in through an array"
+}
+

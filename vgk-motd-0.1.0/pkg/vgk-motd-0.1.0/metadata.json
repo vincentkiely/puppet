@@ -1,0 +1,14 @@
+{
+  "name": "vgk-motd",
+  "version": "0.1.0",
+  "author": "Vincent Kiely",
+  "summary": "Maintain standard motd file",
+  "license": "Apache 2.0",
+  "source": "https://github.com/vincentkiely/puppet",
+  "project_page": "https://github.com/vincentkiely/puppet",
+  "issues_url": "https://github.com/vincentkiely/puppet",
+  "description": "Maintain standard motd file",
+  "dependencies": [
+    {"name":"puppetlabs-stdlib"}
+  ]
+}

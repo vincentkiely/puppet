@@ -1,0 +1,15 @@
+{
+  "name": "vgk-virtu",
+  "version": "0.6.0",
+  "author": "vgk",
+  "summary": "Module to add virtual users",
+  "license": "Apache 2.0",
+  "source": "https://github.com/vincentkiely/puppet",
+  "project_page": "https://github.com/vincentkiely/puppet",
+  "issues_url": "https://github.com/vincentkiely/puppet/issues",
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+  ],
+  "description": "Module to add virtual users"
+}
+
