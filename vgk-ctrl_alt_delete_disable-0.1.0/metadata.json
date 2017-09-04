@@ -1,0 +1,14 @@
+{
+  "name": "vgk-ctrl_alt_delete_disable",
+  "version": "0.1.0",
+  "author": "Vincent Kiely",
+  "summary": "Disable CTRL/ALT/DELETE from rebooting a system",
+  "license": "Apache 2.0",
+  "source": "",
+  "project_page": null,
+  "issues_url": null,
+  "description": "Disable CTRL/ALT/DELETE from rebooting a system",
+  "dependencies": [
+    {"name":"puppetlabs-stdlib"}
+  ]
+}
